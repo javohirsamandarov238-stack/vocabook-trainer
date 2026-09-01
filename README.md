@@ -1,55 +1,74 @@
 # Vocabook Trainer
 
 A spaced-repetition vocabulary trainer built from **Vocabook by @satashkent**, 2nd and 3rd
-editions. 1,343 words, five question formats, adaptive scheduling, no backend.
+editions plus Vocabook IV. 1,899 words, five question formats, adaptive scheduling, no backend.
 
-**Study here: https://javohirsamandarov238-stack.github.io/vocabook-trainer/**
-
-Your progress saves in your own browser, on your own device. Nothing is uploaded anywhere,
-and nobody else can see your scores.
+Open `index.html` in any browser. Nothing is installed, nothing is served, nothing leaves
+your device.
 
 ## Credit
 
 The vocabulary in this project -- every word, definition, example sentence and antonym --
-is the work of **[@satashkent](https://t.me/satashkent)**, from *Vocabook* (2nd and 3rd
-editions). This is a study tool built on top of that book, not a replacement for it, and
-none of the book's own layout, explanations or practice questions is reproduced here.
+is the work of **[@satashkent](https://t.me/satashkent)**, from *Vocabook* (2nd, 3rd and
+4th editions). This repository is a study tool built on top of that book, not a replacement for
+it, and no part of the book's own layout, explanations or practice questions is reproduced
+here.
 
 If you are the author and would prefer this taken down or changed, open an issue and it
 will be removed.
 
-## Files
+## Repository layout
 
-`index.html` is the whole application -- one self-contained file with the vocabulary built
-in. Open it in any browser and it works, online or off. Everything else in this repository
-is the source it was generated from, kept for reference:
-
-| File | What it is |
+| Path | What it is |
 |---|---|
-| `index.html` | The app. This is what the website serves. |
-| `1-core.js` ... `5-library.js`, `app.css`, `index.tpl.html` | Source for the app. |
-| `vocabulary.build.json` | The dataset the app embeds, with word positions and distractor pools. |
-| `vocabulary.json` | The same words in a clean, readable form. |
-| `prefixes-suffixes.json` | 127 word-part entries, extracted but not used by the app yet. |
-| `extract.py`, `enrich.py`, `distractors.py`, `build.py` | The pipeline that produced the dataset from the source PDFs. |
-| `logic.test.js`, `ui.test.js`, `audit.js` | Test suites: 68 engine checks, 74 interface checks, and a contrast audit. |
+| `index.html` | The built app — a single self-contained file. Committed so a clone works immediately. |
+| `src/` | Source: `app.css`, five JS modules (numeric prefixes fix concatenation order), and the HTML shell. |
+| `tools/build.py` | Inlines `src/` and the dataset into `index.html`. |
+| `data/vocabulary.build.json` | The dataset the app is built from, including word positions and vetted distractor pools. |
+| `data/vocabulary.json` | The same words in a clean, hand-editable form. |
+| `data/prefixes-suffixes.json` | 127 word-part entries, extracted but not yet used by the app. |
+| `tools/` | The pipeline that produced the dataset from the source PDFs, plus the build script. |
+| `tests/` | Question-engine tests, interface tests, and the contrast/design audit. |
 
-Note that these files were uploaded flat rather than in folders, so the build and test
-scripts will not run as-is without moving them back into `src/`, `data/`, `tools/` and
-`tests/`. The app itself is unaffected -- `index.html` needs nothing else.
+## Working on it
+
+```bash
+npm install          # jsdom, for the interface tests
+npm run build        # regenerate index.html from src/
+npm test             # 68 engine + 74 interface checks + contrast audit
+npm start            # serve at http://localhost:8000
+```
+
+`index.html` is generated. Edit files in `src/`, then rebuild — CI fails the build if the
+committed `index.html` has drifted from source.
+
+## CI and deploying
+
+Every push to `main` runs all three suites and fails if the committed `index.html` has
+drifted from `src/`.
+
+`.github/workflows/pages.yml` deploys to GitHub Pages on every push to `main`. Enable it
+once under **Settings → Pages → Source → GitHub Actions**; after that it is automatic. The
+published site is readable by anyone.
+
+The source PDFs are excluded by `.gitignore`. `tools/` documents how the dataset was
+derived, but re-running it needs your own copy of the books in `pdfs/`.
 
 ## What's in the dataset
 
-**1,343 unique words**, merged across both editions and de-duplicated.
+**1,899 unique words**, merged across editions 2, 3 and 4 and de-duplicated. Where the same word appears in more than one edition the fuller wording wins, and Vocabook IV's synonyms are folded into entries that already had an antonym.
 
 | Source chapter | Words |
 |---|---|
+| SATashkent 1000 — Real Exam Words (Vocabook IV) | 560 |
 | Ivy Global 500 Words | 426 |
 | College Panda 400 Words | 401 |
 | SATashkent Words (Edition 8.0) | 374 |
-| Advanced Package Vocabulary | 142 |
+| Advanced Package Vocabulary | 138 |
 
-Every entry keeps the book's own definition, example sentence, and antonym, unchanged.
+Every entry keeps the book's own definition, example sentence, and antonym or synonym,
+unchanged. Editions 2 and 3 supply antonyms; edition 4 supplies synonyms instead, so an
+entry may carry either or both.
 
 Three fields were **derived**, not taken from the book:
 
@@ -143,8 +162,33 @@ device, and **Load progress from a file** to restore it.
 - `1` `2` `3` `4` or `A` `B` `C` `D` — answer
 - `Enter` — next question
 
+## Adding or changing words
+
+`data/vocabulary.json` is the same dataset in a clean, editable form. To add a word, append an
+entry with at least `word`, `definition`, and `example`:
+
+```json
+{
+  "word": "Perspicacious",
+  "definition": "Having keen insight",
+  "example": "Her perspicacious remarks impressed the panel.",
+  "antonym": "Obtuse",
+  "pos": "adjective",
+  "difficulty": "hard",
+  "chapter": "My additions"
+}
+```
+
+Add it to `data/vocabulary.build.json` and run `npm run build`. (`data/vocabulary.json`
+is a readable export, not the build input.)
+
+You don't need to work out word positions or distractors. On load the app finds the target
+word inside your example sentence itself (handling `-ed`, `-ing`, doubled consonants and
+`y` to `i`), and builds a vetted distractor pool for any word that doesn't have one.
+`pos` and `difficulty` are optional but improve the questions.
+
 ## Not yet wired in
 
-The 127 prefix and suffix entries in `prefixes-suffixes.json` were extracted from the
-book's Prefix/Suffix chapter but aren't used by the app yet -- they'd suit a separate
+The 127 prefix and suffix entries in `data/prefixes-suffixes.json` were extracted from the
+book's Prefix/Suffix chapter but aren't used by the app yet — they'd suit a separate
 word-parts drill.
