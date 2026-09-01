@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Vocabook — bricolage</title>
+<title>Vocabook</title>
 <meta name="description" content="Drill the Vocabook SAT vocabulary until it sticks.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%230E0D14'/%3E%3Ccircle%20cx='32'%20cy='32'%20r='19'%20fill='none'%20stroke='%232A2740'%20stroke-width='7'/%3E%3Cpath%20d='M32%2013a19%2019%200%200%201%2013.4%2032.4'%20fill='none'%20stroke='%23A08CFF'%20stroke-width='7'%20stroke-linecap='round'/%3E%3Ccircle%20cx='32'%20cy='32'%20r='4.5'%20fill='%23A08CFF'/%3E%3C/svg%3E">
 <link rel="apple-touch-icon" href="icons/icon-180.png">
@@ -11,7 +11,7 @@
 <meta name="color-scheme" content="dark light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,300..700,0..60,0..1;1,9..144,300..700,0..60,0..1&family=Instrument+Sans:ital,wght@0,400..700;1,400..600&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
    Vocabook — visual system
@@ -42,14 +42,12 @@
   --bad-a:     rgba(255,130,114,.13);
   --gold:      #E5BE72;
 
-  --bloom-1: rgba(123,98,240,.16);
-  --bloom-2: rgba(160,140,255,.09);
   --shadow:  0 1px 2px rgba(0,0,0,.4), 0 22px 48px -28px rgba(0,0,0,.9);
   --lift:    0 2px 6px rgba(0,0,0,.35), 0 34px 70px -34px rgba(0,0,0,1);
   --glow:    0 0 0 1px rgba(160,140,255,.22), 0 18px 60px -22px rgba(123,98,240,.6);
 
-  --serif: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
-  --sans:  "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --serif: "Fraunces", "Iowan Old Style", Palatino, Georgia, serif;
+  --sans:  "Instrument Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
   --shell:  1180px;
   --narrow: 760px;
@@ -81,8 +79,6 @@
   --bad-a:     rgba(178,60,42,.10);
   --gold:      #8E6A18;
 
-  --bloom-1: rgba(90,67,201,.10);
-  --bloom-2: rgba(200,150,90,.12);
   --shadow:  0 1px 2px rgba(60,45,25,.05), 0 18px 40px -26px rgba(60,45,25,.28);
   --lift:    0 2px 6px rgba(60,45,25,.07), 0 30px 60px -30px rgba(60,45,25,.4);
   --glow:    0 0 0 1px rgba(90,67,201,.18), 0 16px 46px -20px rgba(90,67,201,.35);
@@ -106,17 +102,14 @@ body {
   overflow-x: hidden;
 }
 
-/* ambient depth: two soft blooms, plus a faint grain over everything */
+/* base wash plus a faint grain; the drifting light lives in .aura */
 body::before {
   content: ""; position: fixed; inset: 0; z-index: -2; pointer-events: none;
-  background:
-    radial-gradient(60rem 40rem at 78% -8%, var(--bloom-1), transparent 62%),
-    radial-gradient(46rem 34rem at 4% 32%,  var(--bloom-2), transparent 60%),
-    linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
 }
 body::after {
   content: ""; position: fixed; inset: 0; z-index: -1; pointer-events: none;
-  opacity: .035;
+  opacity: .04;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 [data-theme="light"] body::after { opacity: .05; }
@@ -716,6 +709,69 @@ select.sel {
 .d3 { animation-delay: 210ms }
 @keyframes rise { from { opacity: 0; transform: translateY(16px) } to { opacity: 1; transform: none } }
 
+
+/* ============================================================
+   Ambient background
+   Three very large radial light fields drifting behind the page.
+   They are pure gradients with soft falloff, so no blur filter is
+   needed and nothing animates except a GPU transform. Slow enough
+   that the page reads as still, alive if you watch it.
+   ============================================================ */
+.aura {
+  position: fixed; inset: -25%; z-index: -2;
+  pointer-events: none; overflow: hidden;
+  contain: layout paint;
+}
+.aura i {
+  position: absolute; display: block;
+  border-radius: 50%;
+  will-change: transform;
+}
+.aura .a1 {
+  width: 78vmax; height: 78vmax; top: -22%; right: -14%;
+  background: radial-gradient(circle, rgba(123,98,240,.20), rgba(123,98,240,0) 66%);
+  animation: drift1 68s ease-in-out infinite alternate;
+}
+.aura .a2 {
+  width: 66vmax; height: 66vmax; bottom: -20%; left: -16%;
+  background: radial-gradient(circle, rgba(160,140,255,.15), rgba(160,140,255,0) 68%);
+  animation: drift2 89s -22s ease-in-out infinite alternate;
+}
+.aura .a3 {
+  width: 54vmax; height: 54vmax; top: 34%; left: 42%;
+  background: radial-gradient(circle, rgba(96,132,255,.10), rgba(96,132,255,0) 70%);
+  animation: drift3 113s -47s ease-in-out infinite alternate;
+}
+@keyframes drift1 {
+  0%   { transform: translate3d(0,0,0) scale(1); }
+  100% { transform: translate3d(-12%, 9%, 0) scale(1.16); }
+}
+@keyframes drift2 {
+  0%   { transform: translate3d(0,0,0) scale(1.06); }
+  100% { transform: translate3d(14%, -8%, 0) scale(.9); }
+}
+@keyframes drift3 {
+  0%   { transform: translate3d(0,0,0) scale(.94); }
+  100% { transform: translate3d(-10%, -13%, 0) scale(1.14); }
+}
+/* on paper the same fields would muddy the warmth, so they barely register */
+[data-theme="light"] .aura { opacity: .5; }
+[data-theme="light"] .aura .a3 {
+  background: radial-gradient(circle, rgba(198,150,74,.12), rgba(198,150,74,0) 70%);
+}
+
+/* Fraunces is variable: a little SOFT and WONK is where its character
+   lives, and optical sizing keeps it from getting spindly when small. */
+.hero-title, .q-word, .brand, .challenge h2, .res-title,
+.insight .iw, .mode-d, .field .flab, .entry-w, .panel h3,
+.empty h3, .modal h2, .fb-lead .w, .fb-verdict, .ans .aw, .q-def {
+  font-variation-settings: "SOFT" 24, "WONK" 1;
+}
+.hero-title, .q-word, .res-title, .challenge h2 { font-optical-sizing: auto; }
+.orb-n, .big-stat .n, .metric .n, .mode-n, .hist-row .hp, .res-pct {
+  font-variation-settings: "SOFT" 12, "WONK" 0;
+}
+
 /* ---------------- responsive ---------------- */
 @media (max-width: 1040px) {
   .hero { grid-template-columns: 1fr; gap: 44px; padding: 60px 0 56px; }
@@ -758,6 +814,7 @@ select.sel {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .aura i { animation: none !important; }
   *, *::before, *::after {
     animation-duration: .001ms !important;
     animation-iteration-count: 1 !important;
@@ -773,22 +830,11 @@ select.sel {
 }
 .spine-bar i { height: 100%; border-radius: 99px; }
 
-
-/* --- display face is a sans in this variant: give it weight --- */
-.brand, .hero-title, .orb-n, .big-stat .n, .challenge h2, .insight .iw,
-.mode-n, .mode-d, .q-word, .q-def, .q-sent, .ans .aw, .fb-verdict,
-.fb-lead .w, .res-title, .metric .n, .field .flab, .entry-w,
-.panel h3, .hist-row .hp, .empty h3, .modal h2, .tag, .res-pct {
-  font-weight: 700;
-  letter-spacing: -.03em;
-}
-.hero-title, .q-word { font-weight: 800; letter-spacing: -.04em; }
-.q-pos, .entry-w .pos, .entry-ex, .fb-row.ex .rv { font-weight: 500; font-style: normal; }
-.entry-ex em, .fb-row.ex em { font-weight: 700; }
-
 </style>
 </head>
 <body>
+<div class="aura" aria-hidden="true"><i class="a1"></i><i class="a2"></i><i class="a3"></i></div>
+
 <header class="top">
   <div class="top-in">
     <div class="brand">Vocabook<i></i></div>
