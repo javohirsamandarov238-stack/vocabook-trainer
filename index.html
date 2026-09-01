@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Vocabook</title>
+<title>Vocabook — bricolage</title>
 <meta name="description" content="Drill the Vocabook SAT vocabulary until it sticks.">
 <meta name="color-scheme" content="dark light">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300..800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
 /* =========================================================
    Vocabook — visual system
@@ -45,8 +45,8 @@
   --lift:    0 2px 6px rgba(0,0,0,.35), 0 34px 70px -34px rgba(0,0,0,1);
   --glow:    0 0 0 1px rgba(160,140,255,.22), 0 18px 60px -22px rgba(123,98,240,.6);
 
-  --serif: "Instrument Serif", "Iowan Old Style", Palatino, Georgia, serif;
-  --sans:  "Manrope", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --serif: "Bricolage Grotesque", ui-sans-serif, system-ui, sans-serif;
+  --sans:  "Manrope", ui-sans-serif, system-ui, sans-serif;
 
   --shell:  1180px;
   --narrow: 760px;
@@ -769,6 +769,19 @@ select.sel {
   border-radius: 99px; overflow: hidden;
 }
 .spine-bar i { height: 100%; border-radius: 99px; }
+
+
+/* --- display face is a sans in this variant: give it weight --- */
+.brand, .hero-title, .orb-n, .big-stat .n, .challenge h2, .insight .iw,
+.mode-n, .mode-d, .q-word, .q-def, .q-sent, .ans .aw, .fb-verdict,
+.fb-lead .w, .res-title, .metric .n, .field .flab, .entry-w,
+.panel h3, .hist-row .hp, .empty h3, .modal h2, .tag, .res-pct {
+  font-weight: 700;
+  letter-spacing: -.03em;
+}
+.hero-title, .q-word { font-weight: 800; letter-spacing: -.04em; }
+.q-pos, .entry-w .pos, .entry-ex, .fb-row.ex .rv { font-weight: 500; font-style: normal; }
+.entry-ex em, .fb-row.ex em { font-weight: 700; }
 
 </style>
 </head>
@@ -1649,7 +1662,7 @@ function moveIndicator() {
 
 /* ---------------- number count-up ---------------- */
 function countUp(el, to, suffix = '') {
-  const fmt = n => n.toLocaleString() + suffix;
+  const fmt = n => n.toLocaleString('en-US') + suffix;
   if (mq('(prefers-reduced-motion: reduce)').matches || to === 0) {
     el.textContent = fmt(to); return;
   }
@@ -1712,8 +1725,8 @@ function viewDash() {
       : `Your vocabulary.<span>Getting sharper.</span>`;
 
   const sub = !started
-    ? `<b>${s.total.toLocaleString()} Vocabook words</b> in your collection, none tested yet. One session is about eight minutes.`
-    : `<b>${s.total.toLocaleString()} Vocabook words</b> &middot; <b>${s.mastered}</b> mastered &middot; ${
+    ? `<b>${s.total.toLocaleString('en-US')} Vocabook words</b> in your collection, none tested yet. One session is about eight minutes.`
+    : `<b>${s.total.toLocaleString('en-US')} Vocabook words</b> &middot; <b>${s.mastered}</b> mastered &middot; ${
         sess.raw >= DAILY_GOAL ? 'today&rsquo;s goal met.' : `${DAILY_GOAL - sess.raw} more questions to hit today&rsquo;s goal.`}`;
 
   const diffCount = k => VOCAB.filter(v => v.difficulty === k).length;
@@ -1754,7 +1767,7 @@ function viewDash() {
         <i style="width:${(diffCount('medium') / s.total) * 100}%;background:var(--accent-2)"></i>
         <i style="width:${(diffCount('hard') / s.total) * 100}%;background:var(--accent)"></i>
       </div>
-      <div class="spark-note">difficulty spread across all ${s.total.toLocaleString()} words</div>
+      <div class="spark-note">difficulty spread across all ${s.total.toLocaleString('en-US')} words</div>
     </div>`;
 
   app().innerHTML = `
@@ -1808,7 +1821,7 @@ function viewDash() {
   <section class="sec">
     <div class="sec-h">
       <div class="eyebrow">Choose your training</div>
-      <span class="more">Every question is built from your own ${s.total.toLocaleString()} words</span>
+      <span class="more">Every question is built from your own ${s.total.toLocaleString('en-US')} words</span>
     </div>
     <div class="modes">
       ${[['wd', 'Recognize', 'Word to definition', 'See the word, choose what it means.'],
@@ -1859,7 +1872,7 @@ function viewSetup() {
   <div class="setup">
     <div class="eyebrow rise">Build a session</div>
     <h1 class="hero-title rise" style="font-size:clamp(2.3rem,5vw,3.6rem);margin-top:14px">Set your terms.</h1>
-    <p class="hero-sub rise d1" style="margin-bottom:44px">Questions are generated from your ${VOCAB.length.toLocaleString()} Vocabook words. Nothing is invented.</p>
+    <p class="hero-sub rise d1" style="margin-bottom:44px">Questions are generated from your ${VOCAB.length.toLocaleString('en-US')} Vocabook words. Nothing is invented.</p>
 
     <div class="field">
       <div class="flab">Number of questions</div>
@@ -2234,7 +2247,7 @@ function renderLibResults() {
   const box = $('#libResults');
   if (!box) return;
   box.innerHTML = `
-    <p class="small faint" style="margin:0 0 16px">${ids.length.toLocaleString()} word${ids.length === 1 ? '' : 's'}${ids.length ? ' &middot; tap a card for its sentence' : ' \u2014 try a different search or filter'}</p>
+    <p class="small faint" style="margin:0 0 16px">${ids.length.toLocaleString('en-US')} word${ids.length === 1 ? '' : 's'}${ids.length ? ' &middot; tap a card for its sentence' : ' \u2014 try a different search or filter'}</p>
     ${ids.length ? `<div class="cards">${ids.slice(0, lib.shown).map(entryHtml).join('')}</div>
       ${ids.length > lib.shown ? `<div style="text-align:center;margin-top:30px"><button class="btn" data-act="more">Show more (${ids.length - lib.shown} left)</button></div>` : ''}
       ${ids.length <= 400 ? `<div style="text-align:center;margin-top:18px"><button class="btn btn-primary" data-act="drill-filtered">Test me on these ${ids.length} words ${ICON.arrow}</button></div>` : ''}`
@@ -2318,7 +2331,7 @@ function viewProgress() {
     <h1 class="hero-title" style="font-size:clamp(2.3rem,5vw,3.6rem);margin-top:14px">${
       S.tests.length ? 'How it is going.' : 'Nothing to plot yet.'}</h1>
     <p class="hero-sub">${S.tests.length
-      ? `Across ${S.tests.length} test${S.tests.length === 1 ? '' : 's'} and ${s.answered.toLocaleString()} questions.`
+      ? `Across ${S.tests.length} test${S.tests.length === 1 ? '' : 's'} and ${s.answered.toLocaleString('en-US')} questions.`
       : 'Take a test and your history builds up here.'}</p>
   </div>
 
@@ -2337,7 +2350,7 @@ function viewProgress() {
   <div class="two" style="margin-top:16px">
     <div class="panel">
       <h3>Where your words stand</h3>
-      <div class="psub">All ${s.total.toLocaleString()} Vocabook words</div>
+      <div class="psub">All ${s.total.toLocaleString('en-US')} Vocabook words</div>
       <div class="bars">${dist.map(([l, n, c]) => `<div class="bar"><span>${l}</span>
         <span class="bar-t"><i class="bar-f" style="width:${(n / s.total) * 100}%;background:${c}"></i></span>
         <span class="v tabular">${n}</span></div>`).join('')}</div>
