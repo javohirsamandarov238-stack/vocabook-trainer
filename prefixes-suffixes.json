@@ -1,0 +1,891 @@
+[
+ {
+  "part": "ab",
+  "meaning": "away",
+  "examples": "absent, abnormal, absorb",
+  "sentence": "The student was absent from class yesterday.",
+  "breakdown": "'Absent' = ab (away) + sent (to be). The word means 'to be away.'"
+ },
+ {
+  "part": "able/ible",
+  "meaning": "capable of",
+  "examples": "reversible, breakable, visible",
+  "sentence": "The glass is breakable, so handle it with care.",
+  "breakdown": "'Breakable' = break (to fracture) + able (capable of). Capable of being broken."
+ },
+ {
+  "part": "ad",
+  "meaning": "to; toward",
+  "examples": "adapt",
+  "sentence": "The company adapted quickly to market changes.",
+  "breakdown": "'Adapt' = ad (to) + apt (fit). To fit to new conditions."
+ },
+ {
+  "part": "al",
+  "meaning": "having to do with",
+  "examples": "seasonal",
+  "sentence": "Seasonal fruits are freshest during their natural growing season.",
+  "breakdown": "'Seasonal' = season (time period) + al (related to). The word means 'related to a season.'"
+ },
+ {
+  "part": "amb/ambi",
+  "meaning": "around; both",
+  "examples": "ambient, amble",
+  "sentence": "The ambient lighting created a calm atmosphere.",
+  "breakdown": "'Ambient' = amb (around) + ient (characteristic). The word means 'surrounding.'"
+ },
+ {
+  "part": "ante",
+  "meaning": "before",
+  "examples": "anterior",
+  "sentence": "The anterior part of the car was damaged in the accident.",
+  "breakdown": "'Anterior' = ante (before) + ior (comparative). The word means 'situated in front.'"
+ },
+ {
+  "part": "anthrop",
+  "meaning": "human",
+  "examples": "anthropology",
+  "sentence": "She studied anthropology to learn about human cultures.",
+  "breakdown": "'Anthropology' = anthrop (human) + ology (study of). The word means 'study of humans.'"
+ },
+ {
+  "part": "anti",
+  "meaning": "against",
+  "examples": "antibiotic, antisocial, antifreeze",
+  "sentence": "Antibiotics are used to treat bacterial infections.",
+  "breakdown": "'Antibiotic' = anti (against) + bio (life). The word means 'against life'"
+ },
+ {
+  "part": "aqu",
+  "meaning": "water",
+  "examples": "aquarium, aqueduct, aquifer",
+  "sentence": "The aquarium houses various aquatic species.",
+  "breakdown": "'Aquarium' = aqu (water) + arium (place). The word means 'a place for water creatures.'"
+ },
+ {
+  "part": "ast",
+  "meaning": "star",
+  "examples": "astronomy, astrology, asteroid",
+  "sentence": "Astronomy is the scientific study of stars and planets.",
+  "breakdown": "'Astronomy' = ast (star) + onomy (study of). The word means 'study of stars.'"
+ },
+ {
+  "part": "aud",
+  "meaning": "hear",
+  "examples": "audio, audience, auditorium",
+  "sentence": "The audio quality was clear during the lecture.",
+  "breakdown": "'Audio' = aud (hear) + io (related to). The word means 'related to sound.'"
+ },
+ {
+  "part": "auto",
+  "meaning": "self",
+  "examples": "autograph, automobile, autobiography",
+  "sentence": "She gave her autograph to a young fan.",
+  "breakdown": "'Autograph' = auto (self) + graph (write). The word means 'self-written signature.'"
+ },
+ {
+  "part": "ben/bene",
+  "meaning": "good",
+  "examples": "benefit, benign, benevolent",
+  "sentence": "The scholarship was a great benefit to the student.",
+  "breakdown": "'Benefit' = bene (good) + fit (result). The word means 'a good result.'"
+ },
+ {
+  "part": "bi",
+  "meaning": "two",
+  "examples": "bicycle, bilingual, bisect",
+  "sentence": "She rode her bicycle through the park.",
+  "breakdown": "'Bicycle' = bi (two) + cycle (wheel). The word means 'a vehicle with two wheels.'"
+ },
+ {
+  "part": "bio",
+  "meaning": "life",
+  "examples": "biology, biography, biopsy",
+  "sentence": "Biology helps us understand the complexities of life.",
+  "breakdown": "'Biology' = bio (life) + logy (study). The word means 'study of life.'"
+ },
+ {
+  "part": "cent",
+  "meaning": "hundred",
+  "examples": "century, percent, centipede",
+  "sentence": "The ancient structure has stood for over a century.",
+  "breakdown": "'Century' = cent (hundred) + ury (period). The word"
+ },
+ {
+  "part": "chrono",
+  "meaning": "time",
+  "examples": "chronic, chronological, chronicle",
+  "sentence": "The story was told in chronological order.",
+  "breakdown": "'Chronological' = chrono (time) + logical (arranged). The word means 'arranged by time.'"
+ },
+ {
+  "part": "circum",
+  "meaning": "around",
+  "examples": "circumvent, circumscribe, circumference",
+  "sentence": "The circumference of the circle was measured accurately.",
+  "breakdown": "'Circumference' = circum (around) + ference (carry). The word means 'distance around.'"
+ },
+ {
+  "part": "counter",
+  "meaning": "opposing",
+  "examples": "counterfeit, counteract",
+  "sentence": "She tried to counteract the effects of the medicine.",
+  "breakdown": "'Counteract' = counter (opposing) + act (to do). The word means 'to act against something.'"
+ },
+ {
+  "part": "cred",
+  "meaning": "believe",
+  "examples": "incredible, discredit, credence",
+  "sentence": "The story was incredible, almost too good to be true.",
+  "breakdown": "'Incredible' = cred (believe) + ible (capable of). The word means 'not believable.'"
+ },
+ {
+  "part": "cycl",
+  "meaning": "circle",
+  "examples": "cyclone",
+  "sentence": "The cyclone caused widespread damage to the area.",
+  "breakdown": "'Cyclone' = cycl (circle) + one (action). The word means 'a circular storm.'"
+ },
+ {
+  "part": "dec",
+  "meaning": "ten",
+  "examples": "decade, decimal, decibel",
+  "sentence": "The couple celebrated a decade of marriage.",
+  "breakdown": "'Decade' = dec (ten) + ade (group). The word means 'a period of ten years.'"
+ },
+ {
+  "part": "dem/demo",
+  "meaning": "people",
+  "examples": "democracy, epidemic",
+  "sentence": "Democracy allows people to have a voice in government.",
+  "breakdown": "'Democracy' = demo (people) + cracy (rule). The word means 'rule by the people.'"
+ },
+ {
+  "part": "di/du",
+  "meaning": "two",
+  "examples": "dialogue",
+  "sentence": "The dialogue between the",
+  "breakdown": "'Dialogue' = dia (two) + logue (words). The word"
+ },
+ {
+  "part": "dia",
+  "meaning": "across; through",
+  "examples": "dialogue, diameter, diagnosis",
+  "sentence": "The diameter of the circle was measured accurately.",
+  "breakdown": "'Diameter' = dia (through) + meter (measure). The word means 'measure across.'"
+ },
+ {
+  "part": "dic/dict",
+  "meaning": "speak; say",
+  "examples": "dictate, contradict",
+  "sentence": "The manager dictated a letter to his assistant.",
+  "breakdown": "'Dictate' = dict (speak) + ate (action). The word means 'to speak formally.'"
+ },
+ {
+  "part": "dis",
+  "meaning": "not",
+  "examples": "disobey, disinfect",
+  "sentence": "He chose to disobey the rules and faced the consequences.",
+  "breakdown": "'Disobey' = dis (not) + obey (follow). The word means 'not to follow.'"
+ },
+ {
+  "part": "ence/ance",
+  "meaning": "state; condition",
+  "examples": "performance, conference",
+  "sentence": "The performance was both moving and inspiring.",
+  "breakdown": "'Performance' = perform (to act) + ance (state). The word means 'the state of acting.'"
+ },
+ {
+  "part": "equ",
+  "meaning": "equal",
+  "examples": "equality, equation",
+  "sentence": "The teacher explained the concept of equality in the classroom.",
+  "breakdown": "'Equality' = equ (equal) + ality (state). The word means 'state of being equal.'"
+ },
+ {
+  "part": "ex",
+  "meaning": "former; past",
+  "examples": "ex-girlfriend, ex-president",
+  "sentence": "The ex-president now lives a quiet life.",
+  "breakdown": "'Ex-president' = ex (former) + president (leader). The word means 'former leader.'"
+ },
+ {
+  "part": "fer",
+  "meaning": "carry",
+  "examples": "transfer, conifer",
+  "sentence": "He decided to transfer schools to be closer to home.",
+  "breakdown": "'Transfer' = trans (across) + fer (carry). The word means 'to carry across.'"
+ },
+ {
+  "part": "frac/frag",
+  "meaning": "break",
+  "examples": "fraction, fragment, fragile",
+  "sentence": "The glass was fragile and shattered easily.",
+  "breakdown": "'Fragile' = frag (break) + ile (capable of). The word means 'capable of breaking easily.'"
+ },
+ {
+  "part": "ful",
+  "meaning": "full of",
+  "examples": "thoughtful, painful",
+  "sentence": "She was thoughtful and always considered others' feelings.",
+  "breakdown": "'Thoughtful' = thought (idea) + ful (full of). The word means 'full of thought.'"
+ },
+ {
+  "part": "gen",
+  "meaning": "born",
+  "examples": "gene, genesis",
+  "sentence": "The study of genes helps us understand inheritance.",
+  "breakdown": "'Gene' = gen (born) + e (entity). The word means 'a unit of heredity.'"
+ },
+ {
+  "part": "geo",
+  "meaning": "earth",
+  "examples": "geology, geography",
+  "sentence": "Geology is the study of the Earth's structure and history.",
+  "breakdown": "'Geology' = geo (earth) + logy (study). The word means 'study of the earth.'"
+ },
+ {
+  "part": "grad",
+  "meaning": "step",
+  "examples": "graduation, gradual",
+  "sentence": "Her progress was gradual but steady over time.",
+  "breakdown": "'Gradual' = grad (step) + ual (related to). The word means 'step by step.'"
+ },
+ {
+  "part": "graph",
+  "meaning": "write",
+  "examples": "paragraph, autograph",
+  "sentence": "She wrote a long paragraph explaining her ideas.",
+  "breakdown": "'Paragraph' = para (beside) + graph (write). The word means 'a section of writing.'"
+ },
+ {
+  "part": "hydro/hydra",
+  "meaning": "water",
+  "examples": "hydrate, hydrogen",
+  "sentence": "It is important to hydrate after intense exercise.",
+  "breakdown": "'Hydrate' = hydro (water) + ate (action). The word means 'to provide water.'"
+ },
+ {
+  "part": "hyper",
+  "meaning": "over; beyond",
+  "examples": "hyperactive, hyperlink",
+  "sentence": "The child was hyperactive and full of energy.",
+  "breakdown": "'Hyperactive' = hyper (over) + active (engaged). The word means 'overly active.'"
+ },
+ {
+  "part": "ian",
+  "meaning": "related to; like",
+  "examples": "librarian, pedestrian, historian",
+  "sentence": "The librarian helped me find the book I needed.",
+  "breakdown": "'Librarian' = librar (books) + ian (related to). The word means 'a person related to books.'"
+ },
+ {
+  "part": "ic/tic",
+  "meaning": "having to do with",
+  "examples": "realistic, organic, metallic",
+  "sentence": "The artist's style is very realistic.",
+  "breakdown": "'Realistic' = real (true) + istic (related to). The word means 'having to do with reality.'"
+ },
+ {
+  "part": "ile",
+  "meaning": "related to",
+  "examples": "reptile, juvenile",
+  "sentence": "Juvenile behavior is often immature.",
+  "breakdown": "'Juvenile' = juven (young) + ile (related to). The word means 'related to youth.'"
+ },
+ {
+  "part": "in",
+  "meaning": "not",
+  "examples": "incapable, incomplete, inaudible",
+  "sentence": "The sound was inaudible in the noisy room.",
+  "breakdown": "'Inaudible' = in (not) + audible (able to hear). The word means 'not able to hear.'"
+ },
+ {
+  "part": "inter",
+  "meaning": "between",
+  "examples": "internet, intermission, international",
+  "sentence": "The internet connects people across the globe.",
+  "breakdown": "'Internet' = inter (between) + net (network). The word means 'a network between systems.'"
+ },
+ {
+  "part": "intra",
+  "meaning": "within",
+  "examples": "intrastate, intramural, intrapersonal",
+  "sentence": "Intrastate commerce occurs within a single state.",
+  "breakdown": "'Intrastate' = intra (within) + state (region). The word means 'within the state.'"
+ },
+ {
+  "part": "ism",
+  "meaning": "condition; belief in",
+  "examples": "racism, tourism, journalism",
+  "sentence": "Tourism brings economic benefits to the region.",
+  "breakdown": "'Tourism' = tour (travel) + ism (practice). The word means 'the practice of traveling.'"
+ },
+ {
+  "part": "ist",
+  "meaning": "person who does",
+  "examples": "soloist, cyclist",
+  "sentence": "The soloist gave an amazing performance.",
+  "breakdown": "'Soloist' = solo (alone) + ist (person who does). The word means 'a person who performs alone.'"
+ },
+ {
+  "part": "ity",
+  "meaning": "state of being",
+  "examples": "creativity, disability, equality",
+  "sentence": "Her creativity shone through her artwork.",
+  "breakdown": "'Creativity' = create (to make) + ity (state of being). The word means 'state of being creative.'"
+ },
+ {
+  "part": "ject",
+  "meaning": "throw",
+  "examples": "eject, reject, interject",
+  "sentence": "He was ejected from the game for breaking the rules.",
+  "breakdown": "'Eject' = e (out) + ject (throw). The word means 'to throw out.'"
+ },
+ {
+  "part": "junct",
+  "meaning": "join",
+  "examples": "juncture, junction, adjunct",
+  "sentence": "The junction connected two major highways.",
+  "breakdown": "'Junction' = junct (join) + ion (action). The word means 'a place where things join.'"
+ },
+ {
+  "part": "less",
+  "meaning": "without",
+  "examples": "homeless, useless, wireless",
+  "sentence": "The man was homeless after losing his job.",
+  "breakdown": "'Homeless' = home (shelter) + less (without). The word means 'without a home.'"
+ },
+ {
+  "part": "log",
+  "meaning": "word",
+  "examples": "prologue, eulogy",
+  "sentence": "The prologue gave a preview of the story.",
+  "breakdown": "'Prologue' = pro (before) + log (word). The word means 'words before the main text.'"
+ },
+ {
+  "part": "ly",
+  "meaning": "how; how often",
+  "examples": "quickly, hourly, carefully",
+  "sentence": "She completed the task quickly and efficiently.",
+  "breakdown": "'Quickly' = quick (fast) + ly (in a manner). The word means 'in a fast manner.'"
+ },
+ {
+  "part": "magn",
+  "meaning": "large; great",
+  "examples": "magnify, magnitude, magnificent",
+  "sentence": "The scientist used a lens to magnify the specimen.",
+  "breakdown": "'Magnify' = magn (large) + ify (make)."
+ },
+ {
+  "part": "mal",
+  "meaning": "bad; evil",
+  "examples": "malady, malaria, malice",
+  "sentence": "The patient suffered from a mysterious malady.",
+  "breakdown": "'Malady' = mal (bad) + ady (state). The word means 'a bad condition.'"
+ },
+ {
+  "part": "man",
+  "meaning": "hand",
+  "examples": "manicure, manage, manual",
+  "sentence": "She decided to get a manicure before the event.",
+  "breakdown": "'Manicure' = man (hand) + cure (care). The word means 'care for the hands.'"
+ },
+ {
+  "part": "medi",
+  "meaning": "middle",
+  "examples": "mediocre, medium, medieval",
+  "sentence": "The quality of the food was mediocre at best.",
+  "breakdown": "'Mediocre' = medi (middle) + ocre (standard). The word means 'of middle quality.'"
+ },
+ {
+  "part": "mega",
+  "meaning": "large",
+  "examples": "megabyte, megaphone, megalith",
+  "sentence": "The megaphone amplified her voice so everyone could hear.",
+  "breakdown": "'Megaphone' = mega (large) + phone (sound). The word means 'a large sound device.'"
+ },
+ {
+  "part": "meter",
+  "meaning": "measure",
+  "examples": "diameter, perimeter, thermometer",
+  "sentence": "The thermometer showed a sudden drop in temperature.",
+  "breakdown": "'Thermometer' = thermo (heat) + meter (measure). The word means 'a device to measure heat.'"
+ },
+ {
+  "part": "micro",
+  "meaning": "small",
+  "examples": "microscope, microwave, microbe",
+  "sentence": "The microscope revealed tiny details invisible to the naked eye.",
+  "breakdown": "'Microscope' = micro (small) + scope (look). The word means 'a device to look at small things.'"
+ },
+ {
+  "part": "min",
+  "meaning": "small",
+  "examples": "miniature, minute, minimum",
+  "sentence": "The sculpture was a perfect miniature of the real building.",
+  "breakdown": "'Miniature' = min (small) + iature (form). The word means 'a small form.'"
+ },
+ {
+  "part": "mis",
+  "meaning": "wrong",
+  "examples": "misbehave, misspell, miscount",
+  "sentence": "The students were punished for misbehaving during class.",
+  "breakdown": "'Misbehave' = mis (wrong) + behave (act). The word means 'to act wrongly.'"
+ },
+ {
+  "part": "miss/mit",
+  "meaning": "send",
+  "examples": "missile, transmit, dismiss",
+  "sentence": "The message was transmitted via radio signals.",
+  "breakdown": "'Transmit' = trans (across) + mit (send). The word means 'to send across.'"
+ },
+ {
+  "part": "mon/mono",
+  "meaning": "one",
+  "examples": "monument, monologue, monorail",
+  "sentence": "The actor delivered a powerful monologue during the play.",
+  "breakdown": "'Monologue' = mono (one) + logue (speech). The word means 'a speech by one person.'"
+ },
+ {
+  "part": "mort",
+  "meaning": "death",
+  "examples": "immortal, mortify, mortuary",
+  "sentence": "The story of the immortal being was fascinating.",
+  "breakdown": "'Immortal' = im (not) + mort (death). The word means 'not subject to death.'"
+ },
+ {
+  "part": "multi",
+  "meaning": "many",
+  "examples": "multicolored, multigrain",
+  "sentence": "The artist's painting was beautifully multicolored.",
+  "breakdown": "'Multicolored' = multi (many) + colored (having colors). The word means 'having many colors.'"
+ },
+ {
+  "part": "non",
+  "meaning": "not",
+  "examples": "nonviolent, nonstop, nonfiction",
+  "sentence": "He prefers to read nonfiction books about history.",
+  "breakdown": "'Nonfiction' = non (not) + fiction (made-up stories). The word means 'not fictional.'"
+ },
+ {
+  "part": "oct/octo",
+  "meaning": "eight",
+  "examples": "octopus, octagon, octave",
+  "sentence": "An octagon has eight sides.",
+  "breakdown": "'Octagon' = oct (eight) + agon (angle). The word means 'a shape with eight angles.'"
+ },
+ {
+  "part": "ology",
+  "meaning": "study of",
+  "examples": "biology, zoology, psychology",
+  "sentence": "Psychology is the study of the human mind.",
+  "breakdown": "'Psychology' = psych (mind) + ology (study). The"
+ },
+ {
+  "part": "ortho",
+  "meaning": "straight",
+  "examples": "orthodontist, orthopedic, orthodox",
+  "sentence": "An orthodontist specializes in straightening teeth.",
+  "breakdown": "'Orthodontist' = ortho (straight) + dontist (teeth). The word means 'a specialist in straight teeth.'"
+ },
+ {
+  "part": "ous",
+  "meaning": "having",
+  "examples": "virtuous, hazardous",
+  "sentence": "Her virtuous actions earned her great respect.",
+  "breakdown": "'Virtuous' = virt (goodness) + ous (having). The word means 'having virtue.'"
+ },
+ {
+  "part": "pan",
+  "meaning": "all",
+  "examples": "panorama, pandemic, pantheon",
+  "sentence": "The panoramic view from the mountain was breathtaking.",
+  "breakdown": "'Panoramic' = pan (all) + orama (view). The word means 'a view of everything.'"
+ },
+ {
+  "part": "para",
+  "meaning": "beside; related",
+  "examples": "parallel, parasite, paramedic",
+  "sentence": "The two lines were perfectly parallel to each other.",
+  "breakdown": "'Parallel' = para (beside) + llel (aligned). The word means 'aligned beside each other.'"
+ },
+ {
+  "part": "path",
+  "meaning": "disease; feeling",
+  "examples": "pathogen, psychopath, sympathy",
+  "sentence": "The pathogen caused a widespread infection.",
+  "breakdown": "'Pathogen' = path (disease) + gen (origin). The word means 'origin of disease.'"
+ },
+ {
+  "part": "ped",
+  "meaning": "foot",
+  "examples": "pedal, pedestrian, pedometer",
+  "sentence": "The pedestrian waited for the signal to cross.",
+  "breakdown": "'Pedestrian' = ped (foot) + strian (person). The word means 'a person who walks.'"
+ },
+ {
+  "part": "phobia",
+  "meaning": "fear",
+  "examples": "claustrophobia, hydrophobia, arachnophobia",
+  "sentence": "Her claustrophobia made it hard for her to stay in small spaces.",
+  "breakdown": "'Claustrophobia' = claustro (closed space) + phobia (fear). The word means 'fear of closed spaces.'"
+ },
+ {
+  "part": "phon",
+  "meaning": "sound",
+  "examples": "telephone, saxophone, microphone",
+  "sentence": "He used a microphone to amplify his voice.",
+  "breakdown": "'Microphone' = micro (small) + phone (sound). The word means 'a device for amplifying sound.'"
+ },
+ {
+  "part": "photo",
+  "meaning": "light",
+  "examples": "photography, photosynthesis",
+  "sentence": "Photography captures light to create an image.",
+  "breakdown": "'Photography' = photo (light) + graphy (writing). The word means 'writing with light.'"
+ },
+ {
+  "part": "phys",
+  "meaning": "body; nature",
+  "examples": "physician, physical, physique",
+  "sentence": "The physician examined the patient thoroughly.",
+  "breakdown": "'Physician' = phys (body) + ician (specialist). The word means 'a specialist in medicine.'"
+ },
+ {
+  "part": "plex",
+  "meaning": "parts; units",
+  "examples": "complex, cineplex, duplex",
+  "sentence": "The problem was too complex to solve easily.",
+  "breakdown": "'Complex' = com (together) + plex (parts). The word means 'made of many parts.'"
+ },
+ {
+  "part": "poly",
+  "meaning": "many",
+  "examples": "polygon, polytheism, polygraph",
+  "sentence": "A polygon can have many sides and angles.",
+  "breakdown": "'Polygon' = poly (many) + gon (angle). The word means 'a shape with many angles.'"
+ },
+ {
+  "part": "port",
+  "meaning": "carry",
+  "examples": "airport, transport, import",
+  "sentence": "The truck transported goods across the country.",
+  "breakdown": "'Transport' = trans (across) + port (carry). The word means 'to carry across.'"
+ },
+ {
+  "part": "pos",
+  "meaning": "put; place",
+  "examples": "position, compose, deposit",
+  "sentence": "He composed a letter to the editor.",
+  "breakdown": "'Compose' = com (together) + pose (put). The word means 'to put together.'"
+ },
+ {
+  "part": "post",
+  "meaning": "after",
+  "examples": "posterior, postscript, postpone",
+  "sentence": "The event was postponed due to bad weather.",
+  "breakdown": "'Postpone' = post (after) + pone (place)."
+ },
+ {
+  "part": "pre",
+  "meaning": "before",
+  "examples": "pregame, preview, prepay",
+  "sentence": "We watched the preview of the movie before its release.",
+  "breakdown": "'Preview' = pre (before) + view (see). The word means 'to see before.'"
+ },
+ {
+  "part": "psych",
+  "meaning": "mind",
+  "examples": "psychology, psychic, psychiatrist",
+  "sentence": "Psychology is the study of the mind and behavior.",
+  "breakdown": "'Psychology' = psych (mind) + ology (study). The word means 'study of the mind.'"
+ },
+ {
+  "part": "quad",
+  "meaning": "four",
+  "examples": "quadruple, quadrant, quadratic",
+  "sentence": "The chart was divided into four quadrants.",
+  "breakdown": "'Quadrant' = quad (four) + rant (region). The word means 'one of four parts.'"
+ },
+ {
+  "part": "re",
+  "meaning": "again",
+  "examples": "rebuild, renew",
+  "sentence": "The team worked hard to rebuild the damaged house.",
+  "breakdown": "'Rebuild' = re (again) + build (construct). The word means 'to build again.'"
+ },
+ {
+  "part": "retro",
+  "meaning": "back; backwards",
+  "examples": "retrospect, retroactive, retrograde",
+  "sentence": "In retrospect, the decision was a mistake.",
+  "breakdown": "'Retrospect' = retro (back) + spect (look). The word means 'to look back.'"
+ },
+ {
+  "part": "rupt",
+  "meaning": "break",
+  "examples": "disrupt, interrupt, erupt",
+  "sentence": "The volcano erupted with great force.",
+  "breakdown": "'Erupt' = e (out) + rupt (break). The word means 'to break out.'"
+ },
+ {
+  "part": "scope",
+  "meaning": "look; see",
+  "examples": "periscope, telescope, microscope",
+  "sentence": "The telescope allowed us to see distant stars.",
+  "breakdown": "'Telescope' = tele (far) + scope (look). The word means 'a device for seeing far.'"
+ },
+ {
+  "part": "script/scrib",
+  "meaning": "write",
+  "examples": "scribble, prescribe, manuscript",
+  "sentence": "The doctor prescribed medication for the patient.",
+  "breakdown": "'Prescribe' = pre (before) + scribe (write). The word means 'to write before.'"
+ },
+ {
+  "part": "sect",
+  "meaning": "cut",
+  "examples": "section, dissect, intersect",
+  "sentence": "We examined a section of the tissue under a microscope.",
+  "breakdown": "'Section' = sect (cut) + ion (state). The word means 'a part that is cut off.'"
+ },
+ {
+  "part": "semi",
+  "meaning": "half",
+  "examples": "semicircle, semifinal, semicolon",
+  "sentence": "The garden path was designed as a semicircle.",
+  "breakdown": "'Semicircle' = semi (half) + circle (round shape). The word means 'half a circle.'"
+ },
+ {
+  "part": "sens/sent",
+  "meaning": "to feel",
+  "examples": "sentimental, sensitive, consent",
+  "sentence": "She felt sentimental when looking at old photos.",
+  "breakdown": "'Sentimental' = sent (feel) + mental (state). The word means 'having deep feelings.'"
+ },
+ {
+  "part": "soci",
+  "meaning": "people",
+  "examples": "sociology, social, associate",
+  "sentence": "Sociology is the study of human society.",
+  "breakdown": "'Sociology' = soci (people) + ology (study). The word means 'study of people.'"
+ },
+ {
+  "part": "sol",
+  "meaning": "alone",
+  "examples": "solo, solitary, desolate",
+  "sentence": "He enjoyed the solo performance by the musician.",
+  "breakdown": "'Solo' = sol (alone) + o (state). The word means 'done alone.'"
+ },
+ {
+  "part": "spec",
+  "meaning": "see",
+  "examples": "inspect, spectacle, spectator",
+  "sentence": "The inspector carefully examined the building.",
+  "breakdown": "'Inspect' = in (into) + spect (see). The word means 'to look into.'"
+ },
+ {
+  "part": "spir",
+  "meaning": "breathe",
+  "examples": "conspire, inspire, respiratory",
+  "sentence": "Her speech inspired the audience to take action.",
+  "breakdown": "'Inspire' = in (into) + spir (breathe). The word means 'to breathe life into.'"
+ },
+ {
+  "part": "struct",
+  "meaning": "build",
+  "examples": "construction, structure, instruct",
+  "sentence": "The construction of the new school began last month.",
+  "breakdown": "'Construction' = con (together) + struct (build). The word means 'to build together.'"
+ },
+ {
+  "part": "sub",
+  "meaning": "under",
+  "examples": "subway, submarine, subtitle",
+  "sentence": "The subway is the fastest way to travel in the city.",
+  "breakdown": "'Subway' = sub (under) + way (path). The word"
+ },
+ {
+  "part": "super",
+  "meaning": "over; greater",
+  "examples": "superior, supervisor, superimpose",
+  "sentence": "She received a superior grade on her exam.",
+  "breakdown": "'Superior' = super (over) + ior (related to). The word means 'greater or above.'"
+ },
+ {
+  "part": "syn/sym",
+  "meaning": "with; together",
+  "examples": "sympathy, synonym, symptom",
+  "sentence": "He felt sympathy for the family that lost their home.",
+  "breakdown": "'Sympathy' = sym (together) + pathy (feeling). The word means 'shared feelings.'"
+ },
+ {
+  "part": "tech",
+  "meaning": "craft; skill",
+  "examples": "technique, technology, technician",
+  "sentence": "Her painting technique was very advanced.",
+  "breakdown": "'Technique' = tech (skill) + nique (method). The word means 'a method of skill.'"
+ },
+ {
+  "part": "tele",
+  "meaning": "far",
+  "examples": "television, telephone, telescope",
+  "sentence": "The telephone allowed them to communicate over long distances.",
+  "breakdown": "'Telephone' = tele (far) + phone (sound). The word means 'a device for transmitting sound over distance.'"
+ },
+ {
+  "part": "terr/terra",
+  "meaning": "land; earth",
+  "examples": "terrain, territory",
+  "sentence": "The terrain was rough and difficult to cross.",
+  "breakdown": "'Terrain' = terr (land) + ain (related to). The word means 'a stretch of land.'"
+ },
+ {
+  "part": "the/theo",
+  "meaning": "god",
+  "examples": "theology, monotheism, polytheism",
+  "sentence": "Theology is the study of religious beliefs.",
+  "breakdown": "'Theology' = theo (god) + logy (study). The word means 'study of god.'"
+ },
+ {
+  "part": "therm",
+  "meaning": "heat",
+  "examples": "thermometer, thermos, hypothermia",
+  "sentence": "The thermometer showed a drop in temperature.",
+  "breakdown": "'Thermometer' = therm (heat) + meter (measure). The word means 'a device to measure heat.'"
+ },
+ {
+  "part": "tion",
+  "meaning": "action; state of being",
+  "examples": "infection, addition, celebration",
+  "sentence": "The celebration lasted for hours.",
+  "breakdown": "'Celebration' = celebrate (rejoice) + tion (action). The word means 'the act of rejoicing.'"
+ },
+ {
+  "part": "tract",
+  "meaning": "drag; pull",
+  "examples": "attract, subtract, contraction",
+  "sentence": "The flowers attract many bees in the garden.",
+  "breakdown": "'Attract' = at (toward) + tract (pull). The word means 'to pull toward.'"
+ },
+ {
+  "part": "trans",
+  "meaning": "across; through",
+  "examples": "transform, transaction, translate",
+  "sentence": "The caterpillar transformed into a butterfly.",
+  "breakdown": "'Transform' = trans (across) + form (shape). The word means 'to change shape.'"
+ },
+ {
+  "part": "tri",
+  "meaning": "three",
+  "examples": "tripod, tricycle, triple",
+  "sentence": "The photographer used a tripod to steady the camera.",
+  "breakdown": "'Tripod' = tri (three) + pod (foot). The word means 'a stand with three legs.'"
+ },
+ {
+  "part": "un",
+  "meaning": "not",
+  "examples": "unhappy, unhealthy, unsafe",
+  "sentence": "The child was unhappy with her broken toy.",
+  "breakdown": "'Unhappy' = un (not) + happy (joyful). The word means 'not happy.'"
+ },
+ {
+  "part": "uni",
+  "meaning": "one",
+  "examples": "unicycle, uniform, united",
+  "sentence": "He rode a unicycle to the event.",
+  "breakdown": "'Unicycle' = uni (one) + cycle (wheel). The word means 'a vehicle with one wheel.'"
+ },
+ {
+  "part": "vac",
+  "meaning": "empty",
+  "examples": "vacuum, vacant, evacuate",
+  "sentence": "The room was vacant and ready for new occupants.",
+  "breakdown": "'Vacant' = vac (empty) + ant (state). The word means 'empty or unoccupied.'"
+ },
+ {
+  "part": "ven",
+  "meaning": "come",
+  "examples": "prevent, venue, invent",
+  "sentence": "The new policy aims to prevent accidents.",
+  "breakdown": "'Prevent' = pre (before) + vent (come). The word means 'to come before to stop something.'"
+ },
+ {
+  "part": "vert/veres",
+  "meaning": "turn",
+  "examples": "reverse",
+  "sentence": "He reversed the car into the parking space.",
+  "breakdown": "'Reverse' = re (back) + vers (turn). The word means 'to turn back.'"
+ },
+ {
+  "part": "vid/vis",
+  "meaning": "see",
+  "examples": "visible",
+  "sentence": "The stars were visible on the clear night.",
+  "breakdown": "'Visible' = vis (see) + ible (able). The word means 'able to be seen.'"
+ },
+ {
+  "part": "zoo",
+  "meaning": "animal",
+  "examples": "zoology",
+  "sentence": "Zoology is the study of animals.",
+  "breakdown": "'Zoology' = zoo (animal) + logy (study). The word means 'study of animals.'"
+ },
+ {
+  "part": "SET 1",
+  "meaning": "SET 2",
+  "examples": "SET 3",
+  "sentence": "SET 4",
+  "breakdown": "SET 5"
+ },
+ {
+  "part": "B",
+  "meaning": "B",
+  "examples": "A",
+  "sentence": "B",
+  "breakdown": "B"
+ },
+ {
+  "part": "A",
+  "meaning": "A",
+  "examples": "D",
+  "sentence": "A",
+  "breakdown": "A"
+ },
+ {
+  "part": "C",
+  "meaning": "C",
+  "examples": "A",
+  "sentence": "C",
+  "breakdown": "C"
+ },
+ {
+  "part": "D",
+  "meaning": "D",
+  "examples": "C",
+  "sentence": "C",
+  "breakdown": "C"
+ },
+ {
+  "part": "SET 6",
+  "meaning": "SET 7",
+  "examples": "SET 8",
+  "sentence": "SET 9",
+  "breakdown": "SET 10"
+ },
+ {
+  "part": "SET 11",
+  "meaning": "SET 12",
+  "examples": "SET 13",
+  "sentence": "SET 14",
+  "breakdown": "SET 15"
+ },
+ {
+  "part": "SET 16",
+  "meaning": "SET 17",
+  "examples": "SET 18",
+  "sentence": "SET 19",
+  "breakdown": "SET 20"
+ }
+]

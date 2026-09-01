@@ -1,0 +1,19 @@
+{
+  "name": "vocabook-trainer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A spaced-repetition study app built from the Vocabook SAT vocabulary.",
+  "scripts": {
+    "build": "python3 tools/build.py",
+    "test": "node tests/logic.test.js && node tests/ui.test.js && node tests/audit.js",
+    "test:logic": "node tests/logic.test.js",
+    "test:ui": "node tests/ui.test.js",
+    "test:audit": "node tests/audit.js",
+    "inspect": "node tests/inspect.js",
+    "start": "python3 -m http.server 8000"
+  },
+  "devDependencies": {
+    "jsdom": "^24.0.0"
+  },
+  "license": "UNLICENSED"
+}
